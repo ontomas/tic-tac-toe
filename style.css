@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #121212;
+  --secondary-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 8px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.board__tile {
+  border: 1px solid var(--primary-color);
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0.65rem;
+  font-size: 3rem;
+}
+
+.game-over {
+  display: none;
+}
+
+.winner {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn--again {
+  padding: 0.3rem 0.6rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn--restart {
+  padding: 0.3rem 0.6rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn--start {
+  padding: 0.3rem 0.6rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+  min-width: 100px;
+}
+
+.name-form {
+  margin-bottom: 1rem;
+}
+
+.name-form input {
+  font-size: 1rem;
+}
+
+.radio-group {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group label:nth-child(2),
+.form-group label:nth-child(1) {
+  margin-right: 0.5rem;
+}
