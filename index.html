@@ -14,23 +14,6 @@
           <div class="form-group">
             <label for="x">Player X</label>
             <input type="text" name="x" id="x" required value="Player 1" />
-            <div class="radio-group">
-              <input
-                type="radio"
-                name="player-type-1"
-                id="human-type-1"
-                value="human"
-                checked
-              />
-              <label for="human-type-1">Human</label>
-              <input
-                type="radio"
-                name="player-type-1"
-                id="computer-type-1"
-                value="computer"
-              />
-              <label for="computer-type-1">Computer</label>
-            </div>
           </div>
           <div class="form-group">
             <label for="o">Player O</label>
@@ -41,6 +24,7 @@
                 name="player-type-2"
                 id="human-type-2"
                 value="human"
+                checked
               />
               <label for="human-type-2">Human</label>
               <input
@@ -48,9 +32,15 @@
                 name="player-type-2"
                 id="computer-type-2"
                 value="computer"
-                checked
               />
-              <label for="computer-type-2">Computer</label>
+              <label for="computer-type-2">Dumb Computer</label>
+              <input
+                type="radio"
+                name="player-type-2"
+                id="computer-type-3"
+                value="computer-ai"
+              />
+              <label for="computer-type-2">AI Computer</label>
             </div>
           </div>
           <input class="btn--start" type="submit" value="Start" />
